@@ -22,10 +22,9 @@
 
 <body>
        <section class="home">
-
          <div class="home-div">
             <p>Je suis <span>Noël Beaugare</span>,Developpeur web passionné par le web , le design et l'IA. </p>
-        <a href="">voir mes projets</a>
+        <a href="ToDoListApp/indexTodo.html">voir mes projets</a>
          </div>
          <div class="logo-div">
              <img src="img/imgWebdev.jpg" alt="web dev image" width="220px" height="220px">
@@ -37,36 +36,40 @@
         <h2>À propos</h2>
         <div class="about-div">
         <div class="description-div">
-            <p>Je m'appelle <span>Noël Beaugare</span>, passionné par la création de sites web modernes et interactifs. </p>
-            <p>Je suis actuellement étudiant en <span>développement web</span>, et je cherche à ameliorer mes
-                 compétences en Javascript , HTML, et CSS.</p>
-            <p>J'adore transformer mes idées en projets concrets et experimenter avec les nouvelles technologies.</p><br><br>
-            <a href="#">Télécharger mon CV</a>
-        </div>
-        <div class="img-div"><img src="img/profil.jpg" alt="profil NoelBeaugare" width="200px" height="230px"></div>
+            <p style="flex-basis: 100%;">Je m'appelle <span>Noël Beaugare</span>, passionné par la création de sites web modernes et interactifs. Je suis actuellement étudiant en <span>développement web</span>, et je cherche à ameliorer mes
+                 compétences en Javascript , HTML, et CSS. J'adore transformer mes idées en projets concrets et experimenter avec les nouvelles technologies. </p>
+                 
+                 <a href="img/CV_noelBeaugare.pdf" style="margin-top: 2rem;">Télécharger mon CV</a>
+                </div>
+                <div class="img-div"><img src="img/profil.jpg" alt="profil NoelBeaugare" width="200px" height="230px"></div>
         </div>
        </section>
 <!-- Projets -->
        <section class="projects">
         <h2>Mes projets</h2>
         <div class="project-box">
+         <div>
+          <h4>Création d'une todoList</h4>
+          <p>À base des mes notions basiques apprises en HTML, CSS & JavaScript(Manipulation du DOM), j'ai réalisé une <span>todoList</span> </p><br>
+          <a href="ToDoListApp/indexTodo.html">#voir</a>
+         </div>
             <div id="div2">
                 <h4>Création de script JavaScript </h4><br>
                 <p style="font-size: 80%;">Usage des opérateurs JavaScript pour effectuer des calculs mathématiques et des opérations sur les chaînes de caractères.
-                Création des structures conditionnelles, des boucles, manipulayion des tableaux.
+                Création des structures conditionnelles, des boucles, manipulation des tableaux.
 Utilisage des fonctions JS pour organiser mon code de manière modulaire et réutilisable.</p><br>
-                <a href="">#voir</a>
+                <a href="#" style="margin-top: 0;">#voir</a>
             </div>
             <div>
                 <h4>Projet - Calculateur de prêt hypothecaire. </h4><br>
                 <p>J'ai Crée une interface utilisateur avec des champs qui calcule le paiement mensuel du prêt hypothécaire en
 fonction des valeurs saisies.</p><br>
-                <a href="">#voir</a>
+                <a href="#">#voir</a>
             </div>
             <div>
                 <h4>Creation de page statique en html </h4><br>
                 <p>À base du HTML, CSS et JavaScript appris, j'ai crée une page statique . ce qui m'a permis d'avoir une performance dans l'écriture de la syntaxe de chacun de ces languages.</p><br>
-                <a href="">#voir</a>
+                <a href="#">#voir</a>
             </div>
         </div>
         
@@ -109,10 +112,10 @@ fonction des valeurs saisies.</p><br>
         <p>N'hesitez pas à me contacter</p>
         <form action="" name="formulaire" id="formid">
             <div class="form-div">
-                <div class="names">
-                     <input type="text" placeholder=" votre Prénom ici">
-                     <input type="text" placeholder=" Votre nom ici">
-                </div>
+                <!-- <div class="names">
+                </div> -->
+                  <input type="text" class="name" placeholder=" votre Prénom ici" style="margin-bottom: 0.7rem;">
+                  <input type="text" class="name" placeholder=" Votre nom ici">
                 <input type="email" class="email" placeholder=" email..">
                  <input type="text"  class="title" placeholder=" titre de votre message..">
                 <textarea name="message" placeholder=" Votre message ici..." cols="30" rows="10" ></textarea><br>
