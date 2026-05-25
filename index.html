@@ -1,159 +1,357 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>NoelBeaugare</title>
-</head>
-<!-- Entete de mon site -->
-<header >
-    <h1 >&#65279;GAMEFIO  <span> Noël Beaugare</span></h1>
-    <nav class="navbar">
-        <ul  >
-            <li><a href="#home"  class="navlist active">Acceuil</a></li>
-            <li><a href="#about"  class="navlist">À propos</a></li>
-            <li><a href="#projects" class="navlist">Projets</a></li>
-            <li><a href="#skills" class="navlist">Compétences</a></li>
-            <li><a href="#contacts" class="navlist">Contacts</a></li>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mainStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Noël Beaugare — Développeur Web</title>
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>NelLeDev<span class="logo-bracket"
+          >/&gt;</span
+        >
+      </a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home" class="navlist active">Accueil</a></li>
+          <li><a href="#about" class="navlist">À propos</a></li>
+          <li><a href="#projects" class="navlist">Projets</a></li>
+          <li><a href="#skills" class="navlist">Compétences</a></li>
+          <li><a href="#contacts" class="navlist">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
 
-<body>
-       <section class="home">
-         <div class="home-div">
-            <p>Je suis <span>Noël Beaugare</span>,Developpeur web passionné par le web , le design et l'IA. </p>
-        <a href="ToDoListApp/indexTodo.html">voir mes projets</a>
-         </div>
-         <div class="logo-div">
-             <img src="img/imgWebdev.jpg" alt="web dev image" width="220px" height="220px">
-         </div>
-
-       </section>
- <!-- A propos -->
-       <section class="about">
-        <h2>À propos</h2>
-        <div class="about-div">
-        <div class="description-div">
-            <p style="flex-basis: 100%;">Je m'appelle <span>Noël Beaugare</span>, passionné par la création de sites web modernes et interactifs. Je suis actuellement étudiant en <span>développement web</span>, et je cherche à ameliorer mes
-                 compétences en Javascript , HTML, et CSS. J'adore transformer mes idées en projets concrets et experimenter avec les nouvelles technologies. </p>
-                 
-                 <a href="img/CV_noelBeaugare.pdf" style="margin-top: 2rem;">Télécharger mon CV</a>
-                </div>
-                <div class="img-div"><img src="img/profil.jpg" alt="profil NoelBeaugare" width="200px" height="230px"></div>
+    <!-- ===== HERO ===== -->
+    <section class="home" id="home">
+      <div class="hero-content">
+        <p class="hero-tag">Bonjour, je suis</p>
+        <h1 class="hero-name">Noël <span>Beaugare</span></h1>
+        <p class="hero-desc">
+          Développeur web passionné par le <span>design</span>, le
+          <span>code</span> et l'<span>Intelligence Artificielle</span>.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contacts" class="btn btn-ghost">Me contacter</a>
         </div>
-       </section>
-<!-- Projets -->
-       <section class="projects">
-        <h2>Mes projets</h2>
-        <div class="project-box">
-         <div>
-          <h4>Création d'une todoList</h4>
-          <p>À base des mes notions basiques apprises en HTML, CSS & JavaScript(Manipulation du DOM), j'ai réalisé une <span>todoList</span> </p><br>
-          <a href="ToDoListApp/indexTodo.html">#voir</a>
-         </div>
-            <div id="div2">
-                <h4>Création de script JavaScript </h4><br>
-                <p style="font-size: 80%;">Usage des opérateurs JavaScript pour effectuer des calculs mathématiques et des opérations sur les chaînes de caractères.
-                Création des structures conditionnelles, des boucles, manipulation des tableaux.
-Utilisage des fonctions JS pour organiser mon code de manière modulaire et réutilisable.</p><br>
-                <a href="#" style="margin-top: 0;">#voir</a>
-            </div>
-            <div>
-                <h4>Projet - Calculateur de prêt hypothecaire. </h4><br>
-                <p>J'ai Crée une interface utilisateur avec des champs qui calcule le paiement mensuel du prêt hypothécaire en
-fonction des valeurs saisies.</p><br>
-                <a href="#">#voir</a>
-            </div>
-            <div>
-                <h4>Creation de page statique en html </h4><br>
-                <p>À base du HTML, CSS et JavaScript appris, j'ai crée une page statique . ce qui m'a permis d'avoir une performance dans l'écriture de la syntaxe de chacun de ces languages.</p><br>
-                <a href="#">#voir</a>
-            </div>
+        <div class="social-row">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" aria-label="Twitter/X"
+            ><i class="fab fa-x-twitter"></i
+          ></a>
         </div>
-        
-       </section>
-       <!-- competences -->
+      </div>
+      <div class="hero-image">
+        <div class="hero-img-ring">
+          <img src="img/imgWebdev.jpg" alt="web dev illustration" />
+        </div>
+        <div class="floating-chip chip1"><i class="fab fa-html5"></i> HTML</div>
+        <div class="floating-chip chip2">
+          <i class="fab fa-css3-alt"></i> CSS
+        </div>
+        <div class="floating-chip chip3"><i class="fab fa-js"></i> JS</div>
+      </div>
+    </section>
 
-       <section class="skills">
-    <h2>Mes Compétences</h2>
-           <div class="skills-box">
-                <div class="skills-col">
-                    <h3>Soft-Skills</h3>
-                    <p> Gestion de Projets</p>
-                    <div class="line"><span class="progress" id="soft1"></span></div>
-                    <p> Résolution de projets</p>
-                    <div class="line"><span class="progress" id="soft2"></span></div>
-                    <p> Adaptabilité</p>
-                    <div class="line"><span class="progress" id="soft3"></span></div>
-                    <p> Autodidacte</p>
-                    <div class="line"><span class="progress" id="soft4"></span></div>
-                
-                </div>
-                <div class="skills-col">
-                    <h3>Hard-Skills</h3>
-                    <p> HTML</p>
-                    <div class="line"><span class="progress" id="hard1"></span></div>
-                    <p> CSS</p>
-                    <div class="line"><span class="progress" id="hard2"></span></div>
-                    <p> JavaScript</p>
-                    <div class="line"><span class="progress" id="hard3"></span></div>
-                    <p> VsCode</p>
-                    <div class="line"><span class="progress" id="hard4"></span></div>
-                
-                </div>
-           </div>
-       </section>
-<!-- les contacts -->
-       <section class="contacts">
-        <h2>Contacts</h2>
-        <p>Avez-vous un <span>projet en tête</span> ?</p>
-        <p>N'hesitez pas à me contacter</p>
-        <form action="" name="formulaire" id="formid">
-            <div class="form-div">
-                <!-- <div class="names">
-                </div> -->
-                  <input type="text" class="name" placeholder=" votre Prénom ici" style="margin-bottom: 0.7rem;">
-                  <input type="text" class="name" placeholder=" Votre nom ici">
-                <input type="email" class="email" placeholder=" email..">
-                 <input type="text"  class="title" placeholder=" titre de votre message..">
-                <textarea name="message" placeholder=" Votre message ici..." cols="30" rows="10" ></textarea><br>
-                <button type="submit">Envoyer</button>
+    <!-- ===== À PROPOS ===== -->
+    <section class="about" id="about">
+      <div class="section-label">02 — À propos</div>
+      <h2>Qui suis-je ?</h2>
+      <div class="about-inner">
+        <div class="about-img-col">
+          <div class="about-img-wrap">
+            <img src="img/home.jpg" alt="Noël Beaugare" />
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p>
+            Je m'appelle <strong>Noël Beaugare</strong>, passionné par la
+            création de sites web modernes et interactifs. Actuellement étudiant
+            en <strong>développement web</strong> à la D-CLIC, je perfectionne
+            mes compétences en JavaScript, HTML et CSS. J'adore transformer mes
+            idées en projets concrets et expérimenter avec les nouvelles
+            technologies.
+          </p>
+          <ul class="about-list">
+            <li><i class="fas fa-map-marker-alt"></i> Cotonou, Bénin</li>
+            <li>
+              <i class="fas fa-graduation-cap"></i> Étudiant en développement
+              web
+            </li>
+            <li><i class="fas fa-heart"></i> Design · Code · IA</li>
+          </ul>
+          <a
+            href="img/CV_noelBeaugare.pdf"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-download"></i> Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section class="projects" id="projects">
+      <div class="section-label">03 — Projets</div>
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-list-check"></i></div>
+          <h4>Todo List App</h4>
+          <p>
+            Application de gestion de tâches réalisée avec manipulation avancée
+            du DOM en JavaScript.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <a href="ToDoListApp/indexTodo.html" class="project-link"
+            >Voir le projet <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-code"></i></div>
+          <h4>Scripts JavaScript</h4>
+          <p>
+            Exercices avancés : calculs mathématiques, structures
+            conditionnelles, boucles, tableaux et fonctions modulaires.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>ES6+</span>
+          </div>
+          <a href="#" class="project-link"
+            >Voir le projet <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-calculator"></i></div>
+          <h4>Calculateur Hypothécaire</h4>
+          <p>
+            Interface de calcul du paiement mensuel d'un prêt hypothécaire en
+            fonction des paramètres saisis.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <a href="#" class="project-link"
+            >Voir le projet <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-file-code"></i></div>
+          <h4>Page Statique</h4>
+          <p>
+            Création d'une page statique complète pour maîtriser la syntaxe
+            HTML, CSS et les bases de JavaScript.
+          </p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+          <a href="#" class="project-link"
+            >Voir le projet <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section class="skills" id="skills">
+      <div class="section-label">04 — Compétences</div>
+      <h2>Mes Compétences</h2>
+      <div class="skills-grid">
+        <div class="skills-card">
+          <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Gestion de Projets</span><span>87%</span>
             </div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="87"></span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Résolution de problèmes</span><span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="70"></span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Adaptabilité</span><span>63%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="63"></span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Autodidacte</span><span>68%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="68"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-card">
+          <h3><i class="fas fa-laptop-code"></i> Hard Skills</h3>
+          <div class="skill-item">
+            <div class="skill-header"><span>HTML</span><span>93%</span></div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="93"></span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>CSS</span><span>67%</span></div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="67"></span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>JavaScript</span><span>69%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="69"></span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>VS Code</span><span>82%</span></div>
+            <div class="skill-bar">
+              <span class="skill-fill" data-w="82"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contacts" id="contacts">
+      <div class="section-label">05 — Contact</div>
+      <h2>Travaillons ensemble</h2>
+      <p class="contact-sub">
+        Vous avez un <strong>projet en tête</strong> ? N'hésitez pas à me
+        contacter !
+      </p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>gamefionoelo@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Localisation</strong>
+              <p>Cotonou, Bénin</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Disponibilité</strong>
+              <p>Ouvert aux opportunités</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="formid" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Prénom</label>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Votre prénom"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lname">Nom</label>
+              <input type="text" id="lname" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="votre@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Sujet</label>
+            <input
+              type="text"
+              id="subject"
+              placeholder="Titre de votre message"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Vous voulez un site web pour votre business ? Ecrivez Votre message ici..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Envoyer le message
+          </button>
         </form>
-       </section>
+      </div>
+    </section>
+    <div class="whatsapp">
+      <a href="https://wa.me/+22960851774" target="_blank" title="ercire a Noel"
+        ><img src="img/whatsapp.png" alt="whatsapp du Développeur"
+      /></a>
+    </div>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer-inner">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>NelLeDev<span
+            class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+        <p>
+          Conçu &amp; développé par <strong>Noël Beaugare</strong> · HTML, CSS
+          &amp; JavaScript
+        </p>
+        <p class="footer-copy">© 2026 — Tous droits réservés</p>
+      </div>
+    </footer>
 
-       <script type="text/javascript">
-        let navLinks = document.querySelectorAll('.navlist');
-
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        navLinks.forEach(otherLink => {
-            otherLink.classList.remove('active');
- });
-
-    
-        link.classList.add('active');
-
-        let targetId = link.getAttribute('href');
-
-   
-        let SectionActive = document.querySelector(targetId);
-        if (SectionActive) {
-            SectionActive.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-       </script>
-</body>
-<footer>
-   <p>Designed by <span>Noël Beaugare</span> with HTML , CSS & JavaScript</p><br>
-    <p>   Tous droits réservés : 2026</p>
-</footer>
+    <script src="app.js"></script>
+  </body>
 </html>
